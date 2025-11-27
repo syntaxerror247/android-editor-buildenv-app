@@ -102,6 +102,7 @@ class BuildEnvironment(
             )
             addAll(defaultEnv)
             //add("HOME=/root")
+            add("GRADLE_OPTS=-Djava.io.tmpdir=/alt-tmp")
             add(path)
             addAll(args)
         }

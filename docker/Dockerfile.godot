@@ -5,7 +5,9 @@ FROM alvrme/alpine-android-base:jdk${JDK_VERSION}
 ARG BUILD_TOOLS
 ARG TARGET_SDK
 
-RUN apk add tzdata
+RUN apk add tzdata \
+ && mkdir /alt-tmp \
+ && chmod 777 /alt-tmp
 
 # Install the arm64 build of the Android build tools.
 COPY android-sdk-tools/build-tools /opt/sdk/build-tools/$BUILD_TOOLS/
