@@ -5,9 +5,9 @@ plugins {
 }
 
 android {
-    namespace 'org.godotengine.godot_gradle_build_environment'
-    compileSdk 35
-    ndkVersion '28.1.13356709'
+    namespace = 'org.godotengine.godot_gradle_build_environment'
+    compileSdk = 35
+    ndkVersion = '28.1.13356709'
 
     sourceSets {
         main {
@@ -18,13 +18,13 @@ android {
     }
 
     defaultConfig {
-        applicationId "org.godotengine.godot_gradle_build_environment"
-        minSdk 24
-        targetSdk 35
-        versionCode 1
-        versionName "0.1"
+        applicationId = "org.godotengine.godot_gradle_build_environment"
+        minSdk = 24
+        targetSdk = 35
+        versionCode = 1
+        versionName = "0.1"
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
